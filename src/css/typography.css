@@ -1,0 +1,32 @@
+@font-face
+{
+	font-family: 'argentum_sansbold';
+    src: url(../fonts/argentumsans-bold-webfont.woff2) format('woff2'),
+         url(../fonts/argentumsans-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+	font-family: 'argentum_sansmedium';
+    src: url(../fonts/argentumsans-medium-webfont.woff2) format('woff2'),
+         url(../fonts/argentumsans-medium-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'argentum_sansregular';
+    src: url(../fonts/argentumsans-regular-webfont.woff2) format('woff2'),
+         url(../fonts/argentumsans-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'argentum_sanslight';
+    src: url(../fonts/argentumsans-light-webfont.woff2) format('woff2'),
+         url(../fonts/argentumsans-light-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
