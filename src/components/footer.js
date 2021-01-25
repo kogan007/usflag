@@ -2,11 +2,8 @@ import React, {useState} from 'react';
 import { Link } from "gatsby"
 import Image from "./Image"
 import axios from 'axios';
-<<<<<<< HEAD
 
-=======
 import { navigate } from "gatsby"
->>>>>>> 61b802b (Test)
 
 
 
@@ -19,27 +16,7 @@ const Footer = () => {
 
 	const handleForm = async (event) => {
 		event.preventDefault();
-<<<<<<< HEAD
-		const proxyURL = "https://cors-anywhere.herokuapp.com/";
-		const subscribeURL = `https://api.bigcommerce.com/stores/${process.env.STORE_HASH}/v3/customers/subscribers`
 
-		await axios.post(proxyURL + subscribeURL, {
-			headers: {
-				'Accept': 'application/json',
-				'Content-Type': 'application/json',
-				"X-Auth-Token": process.env.ACCESS_TOKEN,
-				"X-AUTH-CLIENT": process.env.CLIENT_ID
-			},
-			data: JSON.stringify(
-				{
-					email
-				}
-			)
-		})
-	}
-	
-=======
-		
 		try {
 			const response = await axios.post("/.netlify/functions/bcSubscribe", {
 				email
@@ -69,8 +46,7 @@ const Footer = () => {
 		
 		}
 	}
-
->>>>>>> 61b802b (Test)
+	
 	return (
     <div>
         <div className="row">

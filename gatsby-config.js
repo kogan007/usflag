@@ -1,9 +1,7 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
-<<<<<<< HEAD
 
-=======
 const axios = require('axios');
 
 const createJWT = async () => {
@@ -11,7 +9,6 @@ const createJWT = async () => {
 
   return `Bearer ${result.data.token}`;
 }
->>>>>>> 61b802b (Test)
 module.exports = {
   siteMetadata: {
     title: `U.S Flag Store`,
@@ -66,11 +63,7 @@ module.exports = {
       // HTTP headers
       headers: {
         // Learn about environment variables: https://gatsby.dev/env-vars
-<<<<<<< HEAD
-        Authorization: `Bearer ${process.env.JWT}`,
-=======
-        Authorization: createJWT()
->>>>>>> 61b802b (Test)
+        Authorization: `Bearer ${process.env.JWT}`
       },
     },
   },
